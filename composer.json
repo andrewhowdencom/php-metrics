@@ -1,0 +1,21 @@
+{
+    "name": "littlemanco/metrics",
+    "description": "Common interface for metrics libraries",
+    "keywords": ["littlemanco", "standards", "metrics"],
+    "homepage": "https://github.com/littlemanco/metrics",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Howden",
+            "homepage": "https://www.andrewhowden.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Littlemanco\\Metrics\\": "Psr/Log/"
+        }
+    }
+}
