@@ -11,7 +11,17 @@ information can be used for a number of useful processes such as:
 
 ## APIs
 
-- Todo: Think about this
+- We need:
+  - Some sort of registry object that functions as a storage abstraction for all metrics.
+  - Classes for each metric type, as well as to have them constructed in some way, and persisted.
+  - Documented ways to persist metrics to the registry
+  - Documented ways to query all metrics from registry (a collection? a simple array of objects? unsure)
+
+Outstanding questions:
+
+- Do we want to support lazy construction? I.e. just being able to persist metrics within application, and lazily handle stuff.
+- Are the Prometheus abstractions (gauge, count, histogram and summary) suitable?
+- How do we append time metadata to metrics that support it? or do we?
 
 ## Non Goals
 
@@ -25,3 +35,5 @@ of this project.
 
 - http://www.brendangregg.com/usemethod.html
 - https://prometheus.io/docs/introduction/overview/
+- https://github.com/DataDog/php-datadogstatsd
+- https://github.com/Jimdo/prometheus_client_php
